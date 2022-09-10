@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Ross Ferguson - Developer Portfolio</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md">
+                <h1 id="pageTitle">Portfolio</h1>
+            </div>
+        </div>
+        <div id="aboutMeRow" class="row">
+            <div class="col-md-8">
+                <h2 id="aboutMeHeading">About Me</h2>
+                <p>
+                    Hello! I am Ross Ferguson. Currently, I am a Physics teacher living and working on the east coast of
+                    Scotland. At present, I am developing my skill as a full-stack web developer by completing a
+                    Full-stack Bootcamp offered by <a href="https://www.hyperiondev.com/"
+                        target="_blank">HyperionDev</a> and the <a
+                        href="https://www.ed.ac.uk/bayes/about-us/education/hyperiondev-coding-bootcamps"
+                        target="_blank">University of
+                        Edinburgh.</a>
+                    <br>
+                    As a teacher and self-certified geek, I am extremely passionate about the use of technology in the
+                    classroom and how we can develop and foster our young people to become the developers and engineers
+                    of the future.
+                    <br>
+                    In terms of design, I am inspired by simple colour schemes with bold splashes of colour. I also
+                    enjoy retro and space-inspired themes taking inspiration from sci-fi books and movies.
+                    <br>
+                    My goal in the future is to combine my passion for education and teaching with my new found passion
+                    for web development. I would love to work for company who shared these passions and endeavoured to
+                    provide a first class user experience.
+                </p>
+            </div>
+            <div class="col-md-4 verticalCentreImg">
+
+                <img class="shadow" id="myHeadshot" src="Images/myHeadShot.jpg"
+                    alt="image showing my shoulder and heads">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 id="educationHeading">Education</h2>
+                <ul>
+                    <li>
+                        MEd Professional Practice - University of Glasgow (2015 - 2017)
+                    </li>
+                    <li>
+                        PGDE Physics Teaching with Science - University of Glasgow (2012 - 2013)
+                    </li>
+                    <li>
+                        HNC Engineering Systems - Anniesland College (2011 - 2012)
+                    </li>
+                    <li>
+                        BSc Physics - University of Glasgow (2008 - 2011)
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2 id="skillsHeading">Skills</h2>
+                <dl>
+                    <dt>
+                        HTML and CSS
+                    </dt>
+                    <dd>
+                        My ability to use HTML and CSS to produce attractive and effective sites is developing and
+                        something I am actively working on. This page has been created by myself from scratch.
+                    </dd>
+                    <dt>JavaScript</dt>
+                    <dd>
+                        I recently started learning how to effectively use JavaScript to improve my web development
+                        skills.
+                    </dd>
+                    <dt>
+                        Effective communicator
+                    </dt>
+                    <dd>
+                        As a teacher I have excellent communication skills. I am confident in using different types and
+                        styles of communication and adapting my style to match my audience.
+                    </dd>
+                    <dt>Hardworking</dt>
+                    <dd>
+                        I have a strong work ethic and when I begin a task make sure I complete it to the best of my
+                        ability while developing my skills further.
+                    </dd>
+                    <dt>
+                        Course Development
+                    </dt>
+                    <dd>
+                        I began my career as teacher just as Scottish Education was in the middle of a transition from
+                        Standard Grades and Intermediates to National 4/5 and the new CfE Highers. As such I have
+                        developed and honed my skills in course development as much of my early career was spend
+                        creating enw schemes of work to match the courses and refining them with student feedback.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <h2 id="workExpHeading">Work Experience</h2>
+                <dl>
+                    <dt>Physics Teacher - East Lothian Council (2016 - Present)
+                    </dt>
+                    <dd>
+                        As a class teacher, I am responsible for planning and assessing all classes on my timetable. At
+                        present, I also assist in the analysis of attainment data and as such, I am an active member of
+                        the attainment working group. During the Covid-19 pandemic, I took on a lead role in staff,
+                        pupil and parent development concerning the use of Google Classroom and the apps for education.
+                        I empowered our teachers and learners to make use of the resources available to them to ensure
+                        learning was as undisrupted as possible.
+                    </dd>
+                    <dt>
+                        Physics Teacher - Highland Council (2013 - 2016)
+                    </dt>
+                    <dd>
+                        As with my current role my main responsibility was in assessing and setting work for my classes.
+                        I also played an active part in the rolling out of Chromebooks to the school and in training
+                        staff on how to use them.
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <!-- Below creates an image that, when clicked, will enlarge and open up in a modal source: https://www.w3schools.com/howto/howto_css_modal_images.asp  -->
+                <img class="zoom" id="productPageImg" src="Images/productPageWorking.png"
+                    alt="Screenshot showin a working online store" style="cursor:zoom-in"
+                    onclick="document.getElementById('modalScreenshot').style.display='block'">
+
+                <div id="modalScreenshot" class="modal">
+                    <span class="close"
+                        onclick="document.getElementById('modalScreenshot').style.display='none'">&times;</span>
+                    <img class="modal-content" id="modal-content" src="Images/productPageWorking.png">
+                    <div id="caption">Screenshot of the product page from my most recent capstone project</div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2 id="projectsHeading">Projects</h2>
+                <p>As a web developer my most recent and personally rewarding project has been to create an online store
+                    for a fictional business.
+                    <br>
+                    The store had to meet several criteria such as;
+                    <ul>
+                        <li>
+                            Have a functional shopping cart
+                        </li>
+                        <li>
+                            Allow customers to apply a working coupon and update the total to reflect the change
+                        </li>
+                        <li>
+                            Have a page which shows the cart
+                        </li>
+                        <li>
+                            Allow the user to select delivery method and update the total cost to reflect the cost of
+                            the method chosen
+                        </li>
+                        <li>
+                            Have an individual page for each product
+                        </li>
+                    </ul>
+                    I also decided to challenge myself by making it that I would have one page for the products and this
+                    would update depending on which item from the catalogue the user had selected.
+                    <br>
+                    I managed to achieve all of the above receiving full marks and positive comments from the code
+                    reviewer who had reviewed my work.
+                    <br>
+                    I am happy to share the full project on GitHub if requested.
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center ">
+                <h2 id="contactMeHeading">Contact Me</h2>
+                <p> Feel free to reach out to me using any of the following contact methods </p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group list-group-horizontal" id="contactMethodsList">
+                    <li class="list-group-item bg-transparent border-0">
+                        <a href="https://www.linkedin.com/in/ross-ferguson-a8b2bb42/" target="_blank"> <i
+                                class="fa fa-linkedin" style="font-size:48px"></i></a>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0"><a href="https://github.com/rferguson05"
+                            target="_blank"><i class="fa fa-github" style="font-size:48px"></i></a>
+                    <li class="list-group-item bg-transparent border-0">
+                        <a href="https://twitter.com/RFPhysics" target="_blank"><i class="fa fa-twitter"
+                                style="font-size:48px"></i></a>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0"><a href="mailto:rfergusonphysics@gmail.com"><i
+                                class="fa fa-envelope" style="font-size:48px"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
